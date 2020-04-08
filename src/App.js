@@ -1,11 +1,13 @@
 import React from 'react';
-import Navbar from './components/navbar/navbar.comp';
+
+import Layout from './components/layout/layout.comp';
+import Header from './components/header/header.comp';
 
 function App() {
   return (
-    <>
-      <Navbar />
-    </>
+    <Layout>
+      <Header />
+    </Layout>
   );
 }
 

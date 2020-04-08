@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {
-  StyledHeader,
-  HeaderContainer,
+  StyledNavbar,
+  NavbarContainer,
   BrandLogo,
   NavItemContainer,
   NavItem,
@@ -11,10 +11,10 @@ import {
   NavItemLeftContainer
 } from './navbar.styled';
 
-export default function Header() {
+export default function Navbar() {
   return (
-    <StyledHeader>
-      <HeaderContainer>
+    <StyledNavbar>
+      <NavbarContainer>
         <BrandLogo>Logo</BrandLogo>
 
         <NavItemContainer>
@@ -56,11 +56,11 @@ export default function Header() {
             </NavItemRight>
 
             <NavItemRight>
-              <i className='fas fa-bullseye' />
+              <i className='fas fa-registered' />
             </NavItemRight>
           </NavItemRightContainer>
         </NavItemContainer>
-      </HeaderContainer>
-    </StyledHeader>
+      </NavbarContainer>
+    </StyledNavbar>
   );
 }

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const StyledHeader = styled.div`
+export const StyledNavbar = styled.div`
   width: 100%;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.11);
 `;
 
-export const HeaderContainer = styled.div`
+export const NavbarContainer = styled.div`
   display: flex;
   padding: 10px 20px;
 `;
@@ -29,6 +29,7 @@ export const NavItemLeftContainer = styled.div`
 export const NavItem = styled.div`
   width: auto;
   margin-left: 2.2rem;
+  cursor: pointer;
 
   i.fas {
     color: #51b0f1;
@@ -49,6 +50,7 @@ export const NavItemRightContainer = styled.div`
 
 export const NavItemRight = styled.div`
   margin-left: 1rem;
+  cursor: pointer;
 
   i.fas {
     color: rgba(0, 0, 0, 0.5);
