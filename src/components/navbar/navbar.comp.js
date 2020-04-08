@@ -9,7 +9,7 @@ import {
   NavItemRightContainer,
   NavItemRight,
   NavItemLeftContainer
-} from './header.styled';
+} from './navbar.styled';
 
 export default function Header() {
   return (
