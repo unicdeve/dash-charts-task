@@ -5,7 +5,7 @@ import DataHeader from '../data-header/data-header.comp';
 
 export default function DataQualityPie() {
   return (
-    <DataPieWrapper className='mr-2'>
+    <DataPieWrapper className='mr-5'>
       <DataHeader title='Data Quality Index' />
 
       <PieContainer>pie chart here</PieContainer>
