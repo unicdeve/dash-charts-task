@@ -8,7 +8,7 @@ import { Wrapper, ChatsContainer } from './second-chart.styled';
 
 export default function SecondChart() {
   return (
-    <Wrapper>
+    <Wrapper className='mt-5'>
       <ChatsContainer>
         <DataQualityPie />
         <TopErrors />

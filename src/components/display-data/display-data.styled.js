@@ -11,14 +11,26 @@ export const DataContainer = styled.div`
   line-height: 1;
 `;
 
-export const RightContent = styled.div``;
+export const RightContent = styled.div`
+  display: flex;
+
+  i {
+    color: #51b0f1;
+    margin-right: 0.6rem;
+  }
+`;
 
 export const MainText = styled.div`
   font-weight: bold;
+
+  span {
+    font-size: 55%;
+  }
 `;
 
 export const MutedText = styled.div`
-  font-size: 80%;
+  font-size: 70%;
+  color: #ccc !important;
 `;
 
 export const LeftContent = styled.div``;

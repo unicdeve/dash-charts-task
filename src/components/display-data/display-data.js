@@ -16,20 +16,27 @@ const DisplayData = ({ data }) => (
         {data.map(d => (
           <DataContainer className='mb-3'>
             <RightContent>
-              <MainText>
-                {d.text}
-                {d.badge && (
-                  <span class={`badge badge-${d.badgeColor} text-uppercase`}>
-                    {d.badge}
-                  </span>
-                )}
-              </MainText>
-              <MutedText className='text-muted'>{d.mutedText}</MutedText>
+              {d.icon && <i className={`fas ${d.icon}`} />}
+              <div>
+                <MainText>
+                  {d.text}
+                  {d.badge && (
+                    <span class={`badge badge-${d.badgeColor} text-uppercase`}>
+                      {d.badge}
+                    </span>
+                  )}
+                </MainText>
+                <MutedText>{d.mutedText}</MutedText>
+              </div>
             </RightContent>
 
             {d.leftText && (
               <LeftContent>
-                <span className={`text-${d.badgeColor}`}>{d.leftText}</span>
+                <span
+                  className={`text-${d.badgeColor ? d.badgeColor : 'muted'}`}
+                >
+                  {d.leftText}
+                </span>
               </LeftContent>
             )}
           </DataContainer>
