@@ -13,15 +13,17 @@ const DisplayData = ({ data }) => (
   <>
     {data && (
       <DisplayDataContainer>
-        {data.map(d => (
-          <DataContainer className='mb-3'>
+        {data.map((d, i) => (
+          <DataContainer key={i} className='mb-3'>
             <RightContent>
               {d.icon && <i className={`fas ${d.icon}`} />}
               <div>
                 <MainText>
                   {d.text}
                   {d.badge && (
-                    <span class={`badge badge-${d.badgeColor} text-uppercase`}>
+                    <span
+                      className={`badge badge-${d.badgeColor} text-uppercase`}
+                    >
                       {d.badge}
                     </span>
                   )}
